@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edtLimite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite o quanto quer gastar"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtGasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite o quanto gastou"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnLimite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="defineLimite"
+        android:text="Definir limite" />
+
+    <TextView
+        android:id="@+id/txtLimite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limite de gasto: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txtGasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total de gastos: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txtPodeGastar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quanto pode gastar: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txtAviso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"/>
+</LinearLayout>
